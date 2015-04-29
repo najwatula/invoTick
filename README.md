@@ -2,7 +2,7 @@
 System sales, billing and ticketing
 
 ###Installation in Windows:
-------------------------
+
 Requirements: IIS, PHP, PDO Sqlite
 Install IIS and PHP enabled PDO Sqlite.
 
@@ -13,7 +13,7 @@ Set permissions for read and write in the folder itick\invoTick\db\domains for a
 You can now access the browser http: //localhost/itick/invoTick/index.php
 
 ###Installation in Linux:
-----------------------
+
 Requirements: Apache, PHP, PDO Sqlite
 
 Installation example;
@@ -30,7 +30,7 @@ You can now access the browser http: //localhost/itick/invoTick/index.php
 
 
 ###System Access
--------------
+
 By default access to the domain is established:
 
 User: invoTick\admin
@@ -44,7 +44,7 @@ User: admin
 Password: admin
 
 ###important
----------
+
 The first time you access must change the password and access to the domain control panel.
 
 The definition of domain users set forth in the table after access agents.
