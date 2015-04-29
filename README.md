@@ -21,9 +21,10 @@ Installation example;
 ```
 invoTick-master.zip unzip the contents of a folder on your Web server, for example; /var/www/html/itick.  
 Set permissions for read and write in the directory invoTick/db recursive, for all user files;  
+```
 chown -R www-data: www-data /var/www/html/itick/db  
 chmod -R 664 /var/www/html/itick/db  
-
+```
 You can now access the browser http: //localhost/itick/invoTick/index.php
 
 System Access
