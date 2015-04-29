@@ -1,1 +1,1 @@
-<?php $mainPassword='1'; ?>
+<?php $mainPassword='admin'; ?>
