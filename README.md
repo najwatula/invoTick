@@ -36,12 +36,13 @@ User: invoTick\admin
 Password: admin
 
 Access to the control panel is:
+
 User: admin
 
 Password: admin
 
 important
---------------
+---------
 The first time you access must change the password and access to the domain control panel.
 
 The definition of domain users set forth in the table after access agents.
