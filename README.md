@@ -33,16 +33,11 @@ You can now access the browser http: //localhost/itick/invoTick/index.php
 
 System Access
 -------------
-By default access to the domain is established:
-
-User: invoTick\admin
-
-Password: admin
-
-Access to the control panel is:
-
-User: admin
-
+By default access to the domain is established:  
+User: invoTick\admin  
+Password: admin  
+Access to the control panel is:  
+User: admin  
 Password: admin
 
 important
