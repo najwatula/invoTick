@@ -9,7 +9,7 @@ Install IIS and PHP enabled PDO Sqlite.
 invoTick-master.zip unzip the contents in a folder on your Web server, for example; c:\inetpub\wwwroot\itick.  
 Set permissions for read and write in the folder itick\invoTick\db\domains for all user files IIS_IUSRS.  
 
-You can now access the browser http: //localhost/itick/invoTick/index.php  
+You can now access the browser http://servername/itick/invoTick/index.php  
 
 Installation in Linux:
 ----------------------
@@ -25,7 +25,7 @@ Set permissions for read and write in the directory invoTick/db recursive, for a
 chown -R www-data: www-data /var/www/html/itick/db  
 chmod -R 664 /var/www/html/itick/db  
 ```
-You can now access the browser http: //localhost/itick/invoTick/index.php
+You can now access the browser http://servername/itick/invoTick/index.php
 
 System Access
 -------------
@@ -41,5 +41,5 @@ Important
 ---------
 The first time you access must change the password and access to the domain control panel.  
 The definition of domain users set forth in the table after access agents.  
-The password to access the control panel is in the file itick/invoTick/login mainPassword.php.  
+The password to access the control panel is in the file invoTick/login/mainPassword.php.  
 should edit it and change the password
