@@ -36,15 +36,14 @@ System Access
 By default access to the domain is established:  
 User: invoTick\admin  
 Password: admin  
+
 Access to the control panel is:  
 User: admin  
 Password: admin
 
 important
 ---------
-The first time you access must change the password and access to the domain control panel.
-
-The definition of domain users set forth in the table after access agents.
-
-The password to access the control panel is in the file itick/invoTick/login mainPassword.php
+The first time you access must change the password and access to the domain control panel.  
+The definition of domain users set forth in the table after access agents.  
+The password to access the control panel is in the file itick/invoTick/login mainPassword.php.  
 should edit it and change the password
