@@ -1,0 +1,1 @@
+<?php $mainPassword='1'; ?>

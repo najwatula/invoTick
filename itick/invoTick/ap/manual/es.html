@@ -1,0 +1,315 @@
+﻿<html>
+
+<head>
+<link href="../../../cgi_bin/jss/jss.css" rel="stylesheet" type="text/css">
+<script src="../../../cgi_bin/jss/jss.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="es" http-equiv="Content-Language">
+<title>Manual</title>
+<script type="text/javascript">
+var vMenu;
+jss.Init=function(){}
+ 
+</script>
+</head>
+
+<body class="jss-Body">
+
+<table class="jss-TableFrame" style="width: 90%">
+	<tr>
+		<td style="width: 50%; text-align: center;">
+		<img alt="" src="../../images/invoTick.png" style="width: 50%;"></td>
+		<td style="text-align: center"><a href="#instalacion">Instalación</a><br>
+		<a href="#Acceso">Acceso</a><br><a href="#Parametrización Inicial">Parametrización 
+		Inicial</a><br><a href="#Ventas">Ventas</a><br><a href="#Credito">Crédito 
+		Clientes</a><br>Plantillas de Ticket y facturas</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<table class="jss-Panel" style="width: 100%;">
+			<tr class="jss-Caption">
+				<td>&nbsp; <a id="Instalacion"></a>Instalación</td>
+				<td class="jss-Up">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				<table class="jss-Table" style="width: 100%">
+					<tr class="jss-Bar">
+						<td style="width: 50%">En Windows:</td>
+						<td style="width: 50%">En Linux (Ubuntu):</td>
+					</tr>
+					<tr>
+						<td style="vertical-align: top">Requerimientos: IIS, PHP, 
+						PDO Sqlite<br>Instalar IIS y PHP, activar PDO Sqlite.<br>
+						<br>Descomprimir el contenido de invoTick.zip en una carpeta 
+						del servidor Web, por ejemplo; c:\inetpub\wwwroot\itick.<br>
+						<br>Establecer permisos de lectura/escritura en la carpeta 
+						itick\invoTick\db\domains para todos los archivos del usuario 
+						IIS_IUSRS.<br><br>Ya puede acceder con el navegador
+						<a href="http://localhost/itick/invoTick/index.php">http://localhost/itick/invoTick/index.php</a></td>
+						<td>Requerimientos: Apache, PHP, PDO Sqlite<br>Ejemplo de 
+						instalación;<br> - sudo apt-get install apache2 php5 libapache2-mod-php5 
+						php5-sqlite<br> - sudo /etc/init.d/apache2 restart<br>
+						<br>Descomprimir el contenido de invoTick.zip en una carpeta 
+						del servidor Web, por ejemplo; /var/www/html/itick.<br>
+						<br>Establecer permisos de lectura/escritura en la carpeta 
+						/invoTick/db para todos los archivos del usuario; 
+						chown -R www-data:www-data /var/www/html/itick/db<br>
+						chmod -R 660 /var/www/html/itick/db<br>
+						<br>Ya puede acceder con el navegador
+						<a href="http://localhost/itick/invoTick/index.php">http://localhost/itick/invoTick/index.php</a></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<table class="jss-Panel" style="width: 100%; display: none;">
+			<tr class="jss-Caption">
+				<td>&nbsp;<a id="Acceso"></a>Acceso</td>
+				<td class="jss-Up">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				<table class="jss-Table" style="width: 100%">
+					<tr class="jss-Bar">
+						<td style="width: 50%">Login:</td>
+						<td style="width: 50%">panel de Administración:</td>
+					</tr>
+					<tr>
+						<td style="vertical-align: top">Por defecto el usuario es 
+						invoTick\admin, password admin se debe establecer el nombre 
+						del dominio (indica la base de datos que se utilizara), 
+						para validar el usuario y proporcionar el acceso.<br>
+						<br>Por defecto el idioma corresponde al predeterminado 
+						del navegador, pudiendo cambiar la opción del desplegable.</td>
+						<td style="vertical-align: top">En el panel de Administración 
+						puede crear nuevos dominos (bases de datos), el acceso por 
+						defecto sobre el nuevo dominio creado en base a una plantilla 
+						es admin, lo que se recomineda cambiarlo despues del primer 
+						acceso...<br><br>para acceder al panel de control utilice 
+						el usuario admin, password admin.</td>
+					</tr>
+					<tr>
+						<td style="text-align: center;">
+						<img alt="" src="images/login.png"></td>
+						<td style="text-align: center">
+						<img alt="" src="images/adminPanel.png"></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<table class="jss-Panel" style="width: 100%">
+			<tr class="jss-Caption">
+				<td>&nbsp;<a id="Parametrización Inicial"></a>Parametrización Inicial
+				</td>
+				<td class="jss-Down">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				<table class="jss-Table" style="width: 100%">
+					<tr class="jss-Bar">
+						<td colspan="2">En Tablas del Sistema -&gt; Configuración:</td>
+					</tr>
+					<tr>
+						<td style="vertical-align: top">1) Defina los datos de facturación 
+						para la empresa.</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td style="text-align: justify;">2) Estableza los parametros 
+						del servidor smtp para el envio de correos.<br>3) Seleccione 
+						los modelos de ticket y factura que desea que aparezcan 
+						por defecto en el modulo de facturación rapido.<br>4) Seleccione 
+						el modo en el que quiere establecer el precio de los articulos 
+						y servicios;<br>- IVA aplicado; en la factura de venta al 
+						precio del articulo se le suma el IVA.<br>- IVA desglosado; 
+						en la factura de venta el precio del articulo se da con 
+						el IVA incluido y es desglosado posteriormente su importe 
+						en el pie de la factura.<br>5) Establezca el porcentaje 
+						de los impuestos que se aplicaran a alos articulos<br>6) 
+						Establezca las diferentes tarifas/precios que se podran 
+						definir posteriormente por cada producto.<br>7) Establezca 
+						los tipos de cobro que aceptara.<br>8) Cargue las imagenes 
+						que utilizara la aplicación</td>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<table class="jss-Panel" style="width: 100%">
+			<tr class="jss-Caption">
+				<td>&nbsp;<a id="Parametrización Inicial0"></a>Configuración de 
+				las Impresoras </td>
+				<td class="jss-Down">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				<table class="jss-Table" style="width: 100%">
+					<tr class="jss-Bar">
+						<td colspan="2">En Tablas del Sistema -&gt; Configuración 
+						-&gt; Printers:</td>
+					</tr>
+					<tr>
+						<td style="text-align: justify;">WINDOWS / LINUX:<br>Puede 
+						utilizar el sistema nativo de impresoras.</td>
+						<td style="height: 28px"></td>
+					</tr>
+					<tr>
+						<td style="text-align: justify;">ANDROID:<br>Sin sistema 
+						nativo de impresoras, puede utlizar la configuración de 
+						impresoras en red (solo protocolo TCP/IP puerto 9100).<br>
+						Para ello debe definir las impresoras, estableciendo la 
+						Ip publica, debera mapear el puerto 9100 del router a la 
+						Ip de su impresora local.<br>O alternativamente puede tambien 
+						utilizar impresoras en CLOUD.</td>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<table class="jss-Panel" style="width: 100%">
+			<tr class="jss-Caption">
+				<td>&nbsp;<a id="Ventas"></a>Ventas</td>
+				<td class="jss-Down">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="height: 37px">
+				<table class="jss-Table" style="width: 100%">
+					<tr class="jss-Bar">
+						<td>Productos</td>
+					</tr>
+					<tr>
+						<td style="text-align: justify;">Defina previamentete las 
+						familias a los articulos, los articulos se agrupan por familias 
+						y es imprescindible asignarles una familia para utilizar 
+						la facturación rapida.<br>Cuando defina un producto, le 
+						debe asignar la familia a la cual pertenece y establecer 
+						un precio asociado a una tarifa, puede establecer tantos 
+						precios como tarifas tenga declaradas.<br></td>
+					</tr>
+					<tr>
+						<td style="text-align: justify;">
+						<img alt="" src="images/tikaltok-ticketing.png" style="width: 90%"></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<table class="jss-Panel" style="width: 100%">
+			<tr class="jss-Caption">
+				<td>&nbsp;<a id="Credito"></a>Credito Clientes</td>
+				<td class="jss-Up">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				<table class="jss-Table" style="width: 100%">
+					<tr class="jss-Bar">
+						<td colspan="2">En Tablas del Sistema -&gt; Clientes:</td>
+					</tr>
+					<tr>
+						<td style="text-align: justify;">Para Clubs o Sociedades 
+						es posible establecer una linea de credito a los Clientes 
+						para la facturación periodica junto con la cuota.</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td style="text-align: justify;">Puede declarar tantos puntos 
+						de venta como sea necesario, asociando el login del usuario 
+						a cada uno de ellos.<br>Los clientes pueden estar registrados 
+						tanto de forma individual como agrupados por familias o 
+						empresas con una dirección social y de facturación común.<br>
+						Puede establecer indefinidas cuotas con periodos iguales 
+						o distintos por diferentes conceptos.<br>En los periodos 
+						establecidos debe confirmar la generación de todas las facturas 
+						de forma automatica, junto con las del credito acumulado 
+						si lo hubiera.</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="jss-Bar">1) Defina una o varias Tarifas que vaya 
+						a aplicar</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td style="text-align: center;">
+						<img alt="" src="images/tarifas.gif" style="width: 90%;"></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="jss-Bar">2) Defina una familia especifica para 
+						las cuotas</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td style="text-align: center;">
+						<img alt="" src="images/familias.gif" style="width: 90%;"></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="jss-Bar">3) Defina el producto y asignele precios 
+						a las tarifas que le va a aplicar.</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td style="text-align: center;">
+						<img alt="" src="images/productos.gif" style="width: 90%;"></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="jss-Bar">4) Finalmente defina el Cliente y asignele 
+						las cuotas que correspondan.</td>
+						<td style="height: 15px">&nbsp;</td>
+					</tr>
+					<tr>
+						<td style="text-align: center;">
+						<img alt="" src="images/clientes.gif" style="width: 90%;"></td>
+						<td style="height: 15px"></td>
+					</tr>
+					<tr>
+						<td style="text-align: justify;"></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td style="vertical-align: top">&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+</table>
+
+</body>
+
+</html>

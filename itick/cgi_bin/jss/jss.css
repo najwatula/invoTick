@@ -1,0 +1,272 @@
+﻿.jss-Panel {
+	margin: 0pt;
+	padding: 0pt;
+	border: 1pt solid #000000;
+	font-family: Helvetica;
+	font-size: 9pt;
+	border: 1pt solid #A9BCF5;
+	border-radius: 4pt;
+	border-collapse: separate;
+	background-color: #FFFFFF;
+}
+.jss-Tab {
+	font-family: Helvetica;
+	font-size: 9pt;
+	empty-cells: show;
+	height: 19pt;	
+}
+.jss-Window {
+	border-style: solid;
+	border-width: 4px;
+	border-color: #727782;
+	background-color: #D8E0E9;
+	filter: alpha(opacity=99);
+	opacity: 0.99;
+	border-spacing: 0px;
+	border-radius: 6px;
+}
+.jss-Caption, .jss-TabActive {
+	font-family: Helvetica;
+	font-size: 9pt;
+	font-style: italic;
+	font-weight: bold;
+	color: #FFFFFF;
+	background: -webkit-linear-gradient(bottom, #505769,#AEB3BF);
+	background: -moz-linear-gradient(bottom, #505769,#AEB3BF);
+	background: -o-linear-gradient(bottom, #505769,#AEB3BF);
+	background: -ms-linear-gradient(bottom, #505769,#AEB3BF);
+	background-color: #6E7584;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#AEB3BF', endColorstr='#505769');
+}
+.jss-Check{height: 12pt; width: 12pt;}
+.jss-Caption{height: 18pt;}
+.jss-Bar{height: 17pt;}
+.jss-TabInactive, .jss-TabActive{height: 19pt;}
+.jss-Bar, .jss-TabInactive {
+	font-family: Helvetica;
+	font-size: 9pt;
+	font-style: italic;
+	font-weight: bold;
+	color: #000000;
+	background: -webkit-linear-gradient(top,#EBEEF3,#ABB7CB);
+	background: -moz-linear-gradient(top,#EBEEF3,#ABB7CB);
+	background: -o-linear-gradient(top,#EBEEF3,#ABB7CB);
+	background: -ms-linear-gradient(top,#EBEEF3,#ABB7CB);
+	background-color: #D9DEE8;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#EBEEF3',endColorstr='#ABB7CB');
+}
+.jss-BarGrid {
+	background-image: url('assets/az.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.jss-BarGridAct {
+	background-image: url('assets/az-act.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #D8E0E9;
+}
+.jss-TabInactive, .jss-TabActive {
+	border-style: solid;
+	border-width: 1px 1px 0px 1px;
+	border-color: #000000;
+	border-radius: 4pt 8pt 0pt 0pt;
+}
+.jss-TabInactive {
+	cursor: pointer;
+}
+.jss-Table, .jss-TableBorder, .jss-TablePanel, .jss-TableList, .jss-TableCell, .jss-TableGrid, .jss-TableFrame, .jss-Menu {
+	font-family: Helvetica;
+	font-size: 9pt;
+	background-color: #FFFFFF;
+	border-collapse: collapse;
+}
+.jss-Blur, .jss-TableFrame {
+	box-shadow: 0 0 1em hsla(0, 0%, 0%, 1.0);
+	-webkit-box-shadow: 0 0 1em hsla(0, 0%, 0%, 1.0);
+	-moz-box-shadow: 0 0 1em hsla(0, 0%, 0%, 1.0);
+}
+.jss-TableFrame {
+	margin: auto;
+	border: 20pt solid #FFFFFF;
+	border-radius: 6pt;
+	border-collapse: separate;
+}
+.jss-TableBorder {
+	border: 1pt solid #A9BCF5;
+	border-radius: 4pt;
+	padding: 2pt;
+	border-collapse: separate;
+}
+.jss-TablePanel {
+	width: 212mm;
+}
+.jss-TableList, .jss-TableCell {
+	table-layout: fixed;
+}
+.jss-TableList td, .jss-TableCell td {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.jss-TableList tr {
+	border: 1px solid #FFFFFF;
+	cursor: pointer;
+	height: 17pt;
+}
+.jss-TableList tr:nth-child(odd) {
+	background-color: #FFFFFF;
+}
+.jss-TableList tr:nth-child(even) {
+	background-color: #F5F5F3;
+}
+.jss-TableList tr:hover {
+	background-color: #DEB8BB;
+}
+.jss-TableCell td {
+	border: 1px solid #FFFFFF;
+	height: 17pt;
+	cursor: pointer;
+}
+.jss-TableCell td:hover {
+	background-color: #DEB8BB;
+}
+.jss-TableGrid td {
+	border: 1px solid #000066;
+}
+.jss-Close, .jss-Left, .jss-Right, .jss-Up, .jss-Down {
+	background-position: right center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	width: 18px;
+}
+.jss-Close {
+	background-image: url('assets/close.png');
+}
+.jss-Left {
+	background-image: url('assets/left.png');
+}
+.jss-Right {
+	background-image: url('assets/right.png');
+}
+.jss-Up {
+	background-image: url('assets/up.png');
+}
+.jss-Down {
+	background-image: url('assets/down.png');
+}
+.jss-No {
+	background-image: url('assets/no.png');
+}
+.jss-defaultMargins {
+	margin: 2px;
+}
+.jss-Disable {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #6C727E;
+	filter: alpha(opacity=20);
+	opacity: 0.20;
+}
+.jss-NoMargins {
+	border-width: 0px;
+	margin: 0px;
+	border-collapse: collapse;
+}
+.jss-Menu a {
+	border: 1px solid #FFFFFF;
+	text-decoration: none;
+	color: #000080;
+	padding: 1pt;
+	display: block;
+}
+.jss-Menu a:hover {
+	padding: 1pt;
+	border: 1px dotted #800000;
+	text-decoration: none;
+	background-color: #F3F1D3;
+	display: block;
+}
+.jss-Menu a:active {
+	padding: 1pt;
+	border: 1px dotted #800000;
+	text-decoration: none;
+	background-color: #F3F1D3;
+	display: block;
+}
+.jss-Boton {
+	border: 1pt solid #A9BCF5;
+	border-radius: 4pt;
+	padding: 4pt;
+
+	font-family: Helvetica;
+	height: 22pt;
+	width: 80pt;
+	font-size: 9pt;
+	background-color: #084B8A;
+	font-style: italic;
+	font-weight: bold;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.jss-Cursor {
+	cursor: pointer;
+}
+.jss-BotonSave {
+	border-width: 0px;
+	cursor: pointer;
+	background-image: url('assets/Save16.gif');
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	font-size: 0px;
+}
+.jss-Field, .jss-FieldNum, .jss-FieldAuto, .jss-DatePicker, .jss-FieldHigh, .jss-ColorPicker {
+	border: 1px ridge #9EA6C5;
+	margin: 0px;
+	padding: 2pt;
+	font-family: Helvetica;
+	font-size: 9pt;
+	height: 17pt;	
+}
+.jss-FieldNum {
+	text-align: right;
+	background-color: #FAFAEF;
+}
+.jss-FieldHigh, .jss-tdHigh {
+	background-color: #FFE6D7;
+	font-weight: bold;
+    text-indent: 5pt;
+	height: 17pt;       			
+}
+.jss-FieldAuto {
+	width: 100%;
+}
+.jss-FieldHide {
+	border-width: 0px;
+	font-family: Helvetica;
+	font-size: 9pt;
+	background-color: transparent;
+	height: 17pt;	
+}
+.jss-Body {
+	margin: 2pt;
+	background-color: #F1EFE2;
+	height: 100%;
+}
+.Jss-Body {
+	margin: 2pt;
+	background-color: #F1EFE2;
+	height: 100%;	
+}
+html, body { height: 100% }
+
+.Rota180 {
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+}

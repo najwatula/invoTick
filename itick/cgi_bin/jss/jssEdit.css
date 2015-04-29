@@ -1,0 +1,100 @@
+﻿.img-edit {
+	border: 2px outset #CCCCCC;
+	margin: 1px;
+	border-radius: 4px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 20pt;
+	height: 20pt;
+	float: left;
+	background-color: #FFFFFF;
+	cursor: pointer;
+}
+.img-edit:active {
+	border: 2px inset #CCCCCC;
+}
+.img-bold {
+	background-image: url('assets/jssEdit/bold.png');
+}
+.img-copy {
+	background-image: url('assets/jssEdit/copy.png');
+}
+.img-cut {
+	background-image: url('assets/jssEdit/cut.png');
+}
+.img-foreColor {
+	background-image: url('assets/jssEdit/foreColor.png');
+}
+.img-hiliteColor {
+	background-image: url('assets/jssEdit/hiliteColor.png');
+}
+.img-html {
+	background-image: url('assets/jssEdit/html.png');
+}
+.img-indent {
+	background-image: url('assets/jssEdit/indent.png');
+}
+.img-insertImage {
+	background-image: url('assets/jssEdit/insertImage.png');
+}
+.img-createLink {
+	background-image: url('assets/jssEdit/createLink.png');
+}
+.img-insertOrderedList {
+	background-image: url('assets/jssEdit/insertOrderedList.png');
+}
+.img-insertTable {
+	background-image: url('assets/jssEdit/insertTable.png');
+}
+.img-insertUnorderedList {
+	background-image: url('assets/jssEdit/insertUnorderedList.png');
+}
+.img-italic {
+	background-image: url('assets/jssEdit/italic.png');
+}
+.img-justify {
+	background-image: url('assets/jssEdit/justify.png');
+}
+.img-justifyRight {
+	background-image: url('assets/jssEdit/justifyRight.png');
+}
+.img-justifyLeft {
+	background-image: url('assets/jssEdit/justifyLeft.png');
+}
+.img-justifyCenter {
+	background-image: url('assets/jssEdit/justifyCenter.png');
+}
+.img-outdent {
+	background-image: url('assets/jssEdit/outdent.png');
+}
+.img-paste {
+	background-image: url('assets/jssEdit/paste.png');
+}
+.img-redo {
+	background-image: url('assets/jssEdit/redo.png');
+}
+.img-save {
+	background-image: url('assets/jssEdit/save.png');
+}
+.img-underline {
+	background-image: url('assets/jssEdit/underline.png');
+}
+.img-undo {
+	background-image: url('assets/jssEdit/undo.png');
+}
+.img-removeFormat {
+	background-image: url('assets/jssEdit/removeFormat.png');
+}
+.img-insertHorizontalRule {
+	background-image: url('assets/jssEdit/insertHorizontalRule.png');
+}
+.img-del {
+	background-image: url('assets/jssEdit/del.png');
+}
+.img-insert {
+	background-image: url('assets/jssEdit/insert.png');
+}
+.img-print {
+	background-image: url('assets/jssEdit/print.png');
+}
+
