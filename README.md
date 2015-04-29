@@ -1,4 +1,4 @@
-# invoTick
+# invoTick V. 0.1
 System sales, billing and ticketing
 
 Installation in Windows:
