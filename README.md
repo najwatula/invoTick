@@ -6,7 +6,9 @@ Installation in Windows:
 Requirements: IIS, PHP, PDO Sqlite
 Install IIS and PHP enabled PDO Sqlite.
 itick.zip unzip the contents in a folder on your Web server, for example; c:\inetpub\wwwroot\itick.
+
 Set permissions for read and write in the folder itick\invoTick\db\domains for all user files IIS_IUSRS.
+
 You can now access the browser http: //localhost/itick/invoTick/index.php
 
 Installation in Linux:
