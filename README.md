@@ -36,6 +36,7 @@ Password: admin
 
 Access to the control panel is:
 User: admin
+
 Password: admin
 
 important
