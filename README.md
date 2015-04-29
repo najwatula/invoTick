@@ -32,6 +32,7 @@ System Access
 By default access to the domain is established:
 
 User: invoTick\admin
+
 Password: admin
 
 Access to the control panel is:
