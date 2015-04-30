@@ -41,7 +41,7 @@ Password: admin
 
 Important
 ---------
-*default password is "admin".*  
+**default password is "admin".**  
 The first time you access must change the password and access to the domain control panel.  
 The definition of domain users set forth in the table after access agents.  
 The password to access the control panel is in the file invoTick/login/mainPassword.php.  
