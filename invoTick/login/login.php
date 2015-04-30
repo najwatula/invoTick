@@ -1,7 +1,7 @@
 <?php
     //check password
-	require("mainPassword.php");
-    if($mainPassword=='admin'){header('Location: changePassword.php');exit;}
+    //require("mainPassword.php");
+    //if($mainPassword=='admin'){header('Location: changePassword.php');exit;}
 
     // check write permission for db directory
     
