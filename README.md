@@ -1,6 +1,8 @@
 invoTick V. 0.1
 =================
 ##(P.O.S) System sales, billing and ticketing
+Multi-domain, multi-company, multi-selling, multi-user. System.  
+With a single installation you can centrally control a network of dispersed online sales.  
 
 Installation in Windows:
 ------------------------
