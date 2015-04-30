@@ -7,11 +7,10 @@
 if (isset($_POST['oldPassword']) && isset($_POST['newPassword']) && isset($_POST['repeatPassword'])){
 
 	if (($_POST['oldPassword']==$mainPassword) && ($_POST["newPassword"] == $_POST["repeatPassword"])){
-        $fp = fopen("mainPassword.php", "w");
-        fputs($fp, "<?"."php $"."mainPassword='".$_POST["newPassword"]."'; "."?".">");
-        fclose($fp);
-        header('Location: login.php');exit;
-
+        	$fp = fopen("mainPassword.php", "w");
+        	fputs($fp, "<?"."php $"."mainPassword='".$_POST["newPassword"]."'; "."?".">");
+        	fclose($fp);
+        	header('Location: login.php');exit;
 	}
 }
 
@@ -62,7 +61,7 @@ jss.Init=function(){
 							<td style="width: 30%; text-align: right;">Old 
 							password:</td>
 							<td style="width: 50%">
-							<input class="jss-FieldAuto" maxlength="50" name="oldPassword" size="25"></td>
+							<input class="jss-FieldAuto" maxlength="50" name="oldPassword" size="25" value="admin"></td>
 							<td rowspan="3" style="width: 20%; text-align: center;">
 							&nbsp;</td>
 						</tr>
