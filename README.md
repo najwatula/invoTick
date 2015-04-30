@@ -1,4 +1,4 @@
-invoTick V. 0.1
+invoTick V. 0.2
 =================
 ##(P.O.S) System sales, billing and ticketing
 Multi-domain, multi-company, multi-selling, multi-user. System.  
